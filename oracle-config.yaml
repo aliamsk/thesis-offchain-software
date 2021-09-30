@@ -1,0 +1,56 @@
+#### Node Parameters ####
+# IP Address of the node (default is local)
+node_ip: "0.0.0.0"
+# Port that the node is on (default is 9053)
+node_port: "9053"
+# API key for the node
+node_api_key: "testtest"
+
+#### Core API Parameters ####
+# Port which you wish the Oracle Core GET API server to run on.
+# Note, the Oracle Core POST API server (to submit datapoints) will be on
+# `core_api_port` + 1.
+core_api_port: "9010"
+
+#### Local Oracle Parameters ####
+# Your oracle address
+oracle_address: "9iGHP6x9yPqWYAEX2dYZcdtskfs2sUGdoGgPFD7zPzXZNZu5H7D"
+# The base fee constant that all action txs use to calculate fee.
+# Adjust if blockchain is congested/higher tx fees are required.
+base_fee: 1100000
+
+#### Pool Token Ids ####
+# ID of the oracle pool participant token
+oracle_pool_participant_token: "c7f65cfe049d1143784e5bf5aa39ebd8b02622c90a2ff2b46349ee611ed749c9"
+# ID of the oracle pool NFT
+oracle_pool_nft: "1c60ed9de2175f227e7fe9e5da10a2908df38c501b31dab38eca298aef64cda7"
+
+#### Pool Smart Contract Addresses ####
+# Address of the pool's "Live Epoch" contract
+live_epoch_contract_address: "eAZwLafLwE51e4iMagefyGNp8bjPyLKWUns38f954S2wKasTRuhcQj2GRfHWBoGU5AwkGyoxGrsRCDMwxZEq1hVzX2PjebDRuuok1KcRb64DUpFQP9A9rr2ZuRXwss9KWR8ujDJFtiYJ8Sf7U9rsozunWtERtaiL5pMJMKrY68c9ju4upUzynYKT7ZAVwtxtP2yZBhkY3cUsBvPgEBLJrDmV5w2ZUeYBs2AoGsiXxDqT2kMBZ5K8d6CK5HCBQcnTgARNhsXdw7etY6WwUKpjntTsKKaEdQuQDvTvmhR4dcyoE5UPNp3Sb9BGHN2ag1sPodzHBjkTqqaY3xi5UJEYnHki68TtQzCtvGQh2nApW4cuF4xXmM1bTKwHqDopo6CkVi37CPSD3pinVvAHR5MNVrtDZcgmCYeV63jg4VXUsXYpRnjJUYH6qQMmP6BUYyqmX9WWuFTnGbVah5AipxyrBr93JVY1r"
+# Address of the pool's "Epoch Preparation" contract
+epoch_preparation_contract_address: "2DSWBK78v8KhYSTgxGUfaVT4vrSD5bbt9YQEc6jeNGG682J8EVfpiUK9Jyk5Kjh9mrMSHhvjHwmStnqTreomR4rYfb1KKD1meFNrwzmsGfq1bXXHjE6i5sX4tAGdVKX6skoDjaMzHd9iw9RjbBuxj8eMLWNdox78pczZGCmNN5WZi1iezvro5Zpd9mpgRxVo3kPbrWuwLn2YnrFDvWsHm85qgAzeji9Gvp7MT7RyqjDWc3otHAj8EQcPnfFeaGHmrXa92D6avigwKpRC7pu9WwjaCwNorxVes3gsZt3eHYVjxNG42VL2jSGBQx9NU6mXhVyUJpfYuVoQfHvfy3WzMCdNTzcktTYqmFAx7NYRDdrcLYaWtVjfoMdstkc5ADfKzf3zYaNG1juUnhhw"
+# Address of the pool's "Datapoint" contract
+datapoint_contract_address: "4DpyyENymPNGPb1ZFNuQgTX4oEMPWr3HMH8QP2rMU1UDywMg3dT6gMJ5q6i6Wnkiz88L1YaLkZ91M3f7Wpo841H2hWsDQeMtbgtGNn1qDb9VVtuir7KR9HrM7e77m6DeWXFNWBjU2X3qgDuYARGksQbq4ViqKb8Xnx4LE9RcxmbmC7odnByr4cd8yzGRVBXA8KCpES9wATZHWMFLBY6LXeF8Gs9jmz3qYvgpWqCZXc4mnRnYAtwYfqycsKBsCo5"
+# Address of the "Pool Deposit" contract
+pool_deposit_contract_address: "3TVSZTMA5WhjxNd3MoEEbyEC29FbGxaGBTbrP72x8MZXiWtn3CB1tEjUUad1S4L13C9UezEtAEWLDxThWjgxafcbAkLJKMivWWEq8VCevyt38zyWp2Q1fnP5qpNByECgYKyoaHFSSaMhmUW9ULqjZWiHN8bHPr7hNZrPfA5BNmGTRF5nKZYE86JbTYeVboEFQp24Sx8sSV3A1xQ1Go"
+
+#### Oracle Pool Parameters ####
+# The minimum amount of Ergs required for the oracle pool to be considered funded.
+minimum_pool_box_value: 700000000
+# The payout in Ergs that a single oracle earns on successful datapoint posting
+oracle_payout_price: 100000000
+# Length of the oracle pool's live epoch in blocks
+live_epoch_length: 3
+# Length of the oracle pool's epoch preparation stage in blocks
+epoch_preparation_length: 2
+# Buffer length in blocks that is the upper limit for an oracle pool to create a new epoch
+buffer_length: 4
+# Number of oracle who must be within deviation range of each other in order to reach consensus and finalize a new datapoint.
+consensus_num: 2
+
+#### Oracle Pool Features ####
+# Stake Slashing Config (Currently False, slated for future support)
+stake_slashing: False
+# Governance (Currently False, slated for future support)
+governance: False
